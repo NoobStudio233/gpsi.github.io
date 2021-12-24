@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#" class="logo">GPSI</a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="#">主页</a></li>
+                <li><a href="#">档案</a></li>
+                <li><a href="#">研究院</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </header>
+    
+        <div class="content">
+            <div class="textBox">
+                <h2>This is<br><span>高度机密</span></h2>
+                <p>Warning, the academy database is highly classified!</p>
+                    
+            </div>
+            
+            </div>
+        </div>
+        <div class="dr">
+            <div class="dr-header">
+                <p>新增GPSI</p>
+            </div>
+            <div class="dr-body">
+                <div class="list-page-box">
+                    <div class="list-page-item">
+                        <div>
+                            <a href="#">GPSI-006</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
