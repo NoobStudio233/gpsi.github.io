@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iller.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#" class="logo">GPSI</a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="/index.html">主页</a></li>
+                <li><a href="/archives.html">档案</a></li>
+                <li><a href="#">研究院</a></li>
+                <li><a href="#">加入我们</a></li>
+            </ul>
+        </header>
+        <div class="iller">
+            <div class="title">
+                <h1>GPSI-001</h1>
+            </div>
+            <div class="iller-body">
+                <div class="iller-page-box">
+                    <div class="iller-page-item">
+                        <div class="number">
+                            <h4>编号：GPSI-001</h4>
+                        </div>
+                        <div class="gander">
+                            <h4>性别：男</h4>
+                        </div>
+                        <div class="age">
+                            <h4>年龄：14</h4>
+                        </div>
+                        <div class="ill">
+                            <h4>病名：ZLI</h4>
+                        </div>
+                        <div class="story">
+                            <p>
+                                <h4>事件：</h4>
+                                1、会经常在某些课上展现自己，如在英语课上时，老师的电脑或投影出问题了，他会上去修，这就等算，但他在做时从来不会考虑一下自己的能力，自己明明是一个电子设备度物，却还是要“超频”帮老师修他不会的东西，修不起来了就说“搞不起来”。<br>
+                            </p>
+                        </div>
+                        <div class="eva">
+                            <h4>公众评价（45人）：好——4%    坏——96%</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
