@@ -304,4 +304,6 @@ header ul li a{
 .dr .dr-body div a{
     text-decoration: none;
     color: #330909;
+    
+    display: block;
 }
